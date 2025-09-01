@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پمیار - گفتگو</title>
+    <link rel="stylesheet" href="/pamyar_frontend/css/style.css">
+</head>
+
+<body class="chatbot-page">
+    <div class="page-container">
+        <header class="chatbot-header">
+            <a href="home.html" class="back-btn" aria-label="بازگشت">
+                <img src="/pamyar_frontend/assets/back-arrow-icon.svg" alt="بازگشت">
+            </a>
+            <p class="welcome-text">چت‌بات</p>
+            <a href="account.html" class="profile-button" aria-label="پروفایل کاربری">
+                <img src="/pamyar_frontend/assets/my-default-avatar.png" alt="آواتار کاربر" class="profile-avatar">
+                <div class="notification-badge">
+                    <img src="/pamyar_frontend/assets/check-icon.svg" alt="تایید شده">
+                </div>
+            </a>
+        </header>
+
+        <main id="chat-messages" class="chat-messages-container">
+            <div class="main-content-initial">
+                <img src="/pamyar_frontend/assets/main-orb.png" alt="لوگوی پمیار" class="main-orb-small">
+                <div class="prompt-text">
+                    <p>پمیار اینجاست</p>
+                    <p>چطور می‌تونم کمک کنم؟</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="chatbot-footer">
+            <form id="chat-form" action="javascript:void(0);" class="chat-input-form">
+                <button type="submit" style="display: none;" aria-hidden="true"></button>
+
+                <button type="submit" class="send-btn" aria-label="ارسال">
+                        <img src="/pamyar_frontend/assets/send-icon.svg" alt="ارسال">
+                    </button>
+                <input type="text" id="chat-input" class="chat-input" placeholder="پیام خود را بنویسید...">
+            </form>
+        </footer>
+    </div>
+    <script src="/pamyar_frontend/js/chatscript.js"></script>
+</body>
+
+</html>

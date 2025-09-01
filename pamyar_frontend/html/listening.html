@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پمیار - در حال شنیدن</title>
+    <link rel="stylesheet" href="/pamyar_frontend/css/style.css">
+</head>
+
+<body class="home-page">
+    <div class="page-container">
+        <header class="home-header">
+            <p class="welcome-text">سلام رفیق👋</p>
+            <a href="account.html" class="profile-button" aria-label="پروفایل کاربری">
+                <img src="/pamyar_frontend/assets/my-default-avatar.png" alt="آواتار کاربر" class="profile-avatar">
+                <div class="notification-badge">
+                    <img src="/pamyar_frontend/assets/check-icon.svg" alt="تایید شده">
+                </div>
+            </a>
+        </header>
+        <main class="listening-content">
+            <div class="orb-container">
+                <a href="home.html" id="stop-listening-orb">
+                    <img src="/pamyar_frontend/assets/main-orb.png" alt="توقف" class="listening-orb-icon">
+                </a>
+            </div>
+            <div id="status-and-transcript-container" class="status-transcript-wrapper">
+                <p id="listening-status-text" class="listening-text">در حال اتصال...</p>
+            </div>
+            <div class="transcript-container">
+                <p id="transcript-text" class="transcript-preview"></p>
+            </div>
+        </main>
+        <footer class="home-footer">
+            <button id="open-modal-btn" class="footer-btn add-btn" aria-label="اضافه کردن">
+                    <img src="/pamyar_frontend/assets/plus-icon.svg" alt="آیکون اضافه کردن">
+                </button>
+            <a href="home.html">
+                <img src="/pamyar_frontend/assets/footer-orb-active.png" alt="لوگوی پمیار" class="footer-orb-active">
+            </a>
+            <a href="chatbot.html" class="footer-btn chat-btn" aria-label="گفتگوها">
+                <img src="/pamyar_frontend/assets/chat-icon.svg" alt="آیکون گفتگو">
+            </a>
+        </footer>
+    </div>
+    <!-- ================================= -->
+    <!-- === History Bottom Sheet Modal === -->
+    <!-- ================================= -->
+    <div id="history-modal-overlay" class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-handle"></div>
+            <header class="modal-header">
+                <button id="close-modal-btn" class="modal-close-btn" aria-label="بستن">
+                        <img src="/pamyar_frontend/assets/close-icon.svg" alt="بستن">
+                    </button>
+                <div class="modal-links-container">
+                    <a href="history.html" class="modal-link">
+                        <div class="modal-link-content">
+                            <img src="/pamyar_frontend/assets/history-icon.svg" alt="" class="modal-icon">
+                            <span class="modal-title">تاریخچه صحبت‌ها</span>
+                        </div>
+                        <img src="/pamyar_frontend/assets/back-arrow-rtl.svg" alt="" class="modal-arrow">
+                    </a>
+                    <a href="todolist.html" class="modal-link">
+                        <div class="modal-link-content">
+                            <img src="/pamyar_frontend/assets/todolist-icon.svg" alt="" class="modal-icon">
+                            <span class="modal-title">برنامه‌ریزی</span>
+                        </div>
+                        <img src="/pamyar_frontend/assets/back-arrow-rtl.svg" alt="" class="modal-arrow">
+                    </a>
+                </div>
+            </header>
+        </div>
+    </div>
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+    <script src="/pamyar_frontend/js/plusscript.js"></script>
+    <script src="/pamyar_frontend/js/main.js"></script>
+    <script src="/pamyar_frontend/js/editphoto.js"></script>
+    <script src="/pamyar_frontend/js/microph.js"></script>
+</body>
+
+</html>

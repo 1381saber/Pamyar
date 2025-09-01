@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پمیار - ویرایش پروفایل</title>
+    <link rel="stylesheet" href="/pamyar_frontend/css/style.css">
+</head>
+
+<body class="edit-profile-page">
+    <div class="page-container">
+        <header class="todolist-header">
+            <a href="account.html" class="back-btn" aria-label="بازگشت">
+                <img src="/pamyar_frontend/assets/back-arrow-icon.svg" alt="بازگشت">
+            </a>
+            <h1 class="page-title">ویرایش حساب</h1>
+        </header>
+        <main class="edit-profile-main">
+            <form id="avatar-form" class="auth-form">
+                <div class="avatar-upload-container">
+                    <div class="avatar-preview">
+                        <img id="avatar-preview-img" src="/pamyar_frontend/assets/default_avatar.png" alt="پیش‌نمایش آواتار" class="profile-avatar">
+                    </div>
+                    <label for="avatar-input" class="change-avatar-label">
+                            <img src="/pamyar_frontend/assets/camera-icon.svg" alt="تغییر عکس">
+                            <span>تغییر عکس پروفایل</span>
+                        </label>
+                    <input type="file" id="avatar-input" accept="image/*" hidden>
+                </div>
+                <button type="submit" class="auth-button primary-btn margin-line">ذخیره عکس</button>
+            </form>
+            <div class="divider"></div>
+            <form id="password-form" class="auth-form margform">
+                <div class="input-wrapper">
+                    <label for="current-password">رمز عبور فعلی</label>
+                    <input type="password" id="current-password" placeholder="رمز فعلی را وارد کنید" required>
+                </div>
+                <div class="input-wrapper">
+                    <label for="new-password">رمز عبور جدید</label>
+                    <input type="password" id="new-password" placeholder="حداقل ۶ کاراکتر" required minlength="6">
+                </div>
+                <button type="submit" class="cta-button margbt">تغییر رمز</button>
+            </form>
+        </main>
+    </div>
+    <script src="/pamyar_frontend/js/editpass.js"></script>
+    <script src="/pamyar_frontend/js/editphoto.js"></script>
+    <script src="/pamyar_frontend/js/main.js"></script>
+</body>
+
+</html>

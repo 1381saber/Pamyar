@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پمیار - برنامه‌ریزی</title>
+    <link rel="stylesheet" href="/pamyar_frontend/css/style.css">
+</head>
+
+<body class="todolist-page">
+    <div class="page-container">
+        <header class="todolist-header">
+            <a href="home.html" class="back-btn" aria-label="بازگشت">
+                <img src="/pamyar_frontend/assets/back-arrow-icon.svg" alt="بازگشت">
+            </a>
+            <h1 class="page-title">برنامه‌ریزی</h1>
+        </header>
+        <form id="todo-form" class="todo-form">
+            <div class="input-with-tags">
+                <input type="text" id="todo-input" class="todo-input" placeholder="کار جدیدی اضافه کنید...">
+                <div class="tag-selector">
+                    <button type="button" class="tag-btn tag-product active" data-tag="product" aria-label="تگ محصول"></button>
+                    <button type="button" class="tag-btn tag-planning" data-tag="planning" aria-label="تگ برنامه‌ریزی"></button>
+                </div>
+            </div>
+            <button type="submit" class="add-todo-btn" aria-label="افزودن کار">
+                    <img src="/pamyar_frontend/assets/plus-icon.svg" alt="افزودن">
+                </button>
+        </form>
+        <main id="todo-list" class="todo-list-container"></main>
+        <p id="empty-state" class="empty-state">هنوز کاری ثبت نشده است.</p>
+    </div>
+    <script src="/pamyar_frontend/js/todoscrip.js"></script>
+</body>
+
+</html>

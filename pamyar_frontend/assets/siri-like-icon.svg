@@ -1,0 +1,10 @@
+<!-- assets/siri-like-icon.svg -->
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="10" fill="url(#paint0_linear_1_2)"/>
+<defs>
+<linearGradient id="paint0_linear_1_2" x1="2" y1="12" x2="22" y2="12" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2997FF"/>
+<stop offset="1" stop-color="#14D4F4"/>
+</linearGradient>
+</defs>
+</svg>

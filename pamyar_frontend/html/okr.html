@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پمیار - اهداف و نتایج</title>
+    <link rel="stylesheet" href="/pamyar_frontend/css/style.css">
+</head>
+
+<body class="okr-page">
+    <div class="page-container">
+        <header class="okr-header">
+            <a href="home.html" class="back-btn">
+                <img src="/pamyar_frontend/assets/back-arrow-icon.svg" alt="بازگشت">
+            </a>
+            <h1 class="page-title">اهداف و نتایج کلیدی</h1>
+            <button id="add-objective-btn" class="fab-add-btn header-add-btn" aria-label="افزودن هدف جدید">
+                    <img src="/pamyar_frontend/assets/plus-icon.svg" alt="افزودن">
+                </button>
+        </header>
+        <div id="add-objective-panel" class="add-panel">
+            <form id="add-objective-form" class="add-form">
+                <input type="text" id="objective-title-input" placeholder="عنوان هدف (مثلاً: افزایش تعامل کاربر)" required>
+                <input type="text" id="objective-quarter-input" placeholder="بازه زمانی (مثلاً: Q3 2025)" required>
+                <div class="form-actions">
+                    <button type="button" id="cancel-objective-btn" class="cancel-btn">انصراف</button>
+                    <button type="submit" class="cta-button">ایجاد هدف</button>
+                </div>
+            </form>
+        </div>
+        <main id="objectives-container" class="objectives-container"></main>
+    </div>
+    <div id="add-kr-modal-overlay" class="modal-overlay">
+        <div class="kr-modal-container">
+            <h2>افزودن نتیجه کلیدی</h2>
+            <form id="add-kr-form">
+                <input type="hidden" id="kr-objective-id-input">
+                <input type="text" id="kr-title-input" class="kr-input-m" placeholder="عنوان نتیجه کلیدی..." required>
+                <input type="number" id="kr-start-input" class="kr-input-m" placeholder="مقدار شروع" required>
+                <input type="number" id="kr-target-input" class="kr-input-m" placeholder="مقدار هدف" required>
+                <div class="form-actions">
+                    <button type="button" id="cancel-kr-btn" class="cancel-btn">انصراف</button>
+                    <button type="submit" class="cta-button">ذخیره</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/pamyar_frontend/js/okr.js"></script>
+</body>
+
+</html>

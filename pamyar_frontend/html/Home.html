@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پمیار - صفحه اصلی</title>
+    <link rel="stylesheet" href="/pamyar_frontend/css/style.css">
+</head>
+
+<body class="home-page">
+    <div class="page-container">
+        <header class="home-header">
+            <button id="theme-switcher-btn" class="theme-switcher" aria-label="تغییر تم">
+                    <img src="/pamyar_frontend/assets/moon" alt="تم تیره">
+                </button>
+            <p class="welcome-text">سلام رفیق👋</p>
+            <a href="account.html" class="profile-button" aria-label="پروفایل کاربری">
+                <img src="/pamyar_frontend/assets/my-default-avatar.png" alt="آواتار کاربر" class="profile-avatar">
+                <div class="notification-badge">
+                    <img src="/pamyar_frontend/assets/check-icon.svg" alt="تایید شده">
+                </div>
+            </a>
+        </header>
+        <main class="main-content">
+            <img src="/pamyar_frontend/assets/main-orb.png" alt="لوگوی پمیار" class="main-orb-small">
+            <div class="prompt-text">
+                <p>پمیار اینجاست</p>
+                <p>چطور می‌تونم کمک کنم؟</p>
+            </div>
+            <div class="action-buttons">
+                <button class="action-btn">مشکلات و موانع محصول را بپرسید</button>
+                <button class="action-btn">تحقیقات بازار انجام دهید</button>
+                <button class="action-btn">برای محصول و آینده برنامه‌ریزی کنید</button>
+            </div>
+        </main>
+        <footer class="home-footer">
+            <button id="open-modal-btn" class="footer-btn add-btn" aria-label="اضافه کردن">
+                    <img src="/pamyar_frontend/assets/plus-icon.svg" alt="آیکون اضافه کردن">
+                </button>
+            <a href="listening.html">
+                <img src="/pamyar_frontend/assets/footer-orb.png" alt="لوگوی پمیار" class="footer-orb" id="mic-orb-link">
+            </a>
+            <a href="chatbot.html" class="footer-btn chat-btn" aria-label="گفتگوها">
+                <img src="/pamyar_frontend/assets/chat-icon.svg" alt="آیکون گفتگو">
+            </a>
+        </footer>
+    </div>
+    <!-- ===================== -->
+    <!-- ===  بخش مودال  === -->
+    <!-- ===================== -->
+    <div id="history-modal-overlay" class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-handle"></div>
+            <header class="modal-header">
+                <button id="close-modal-btn" class="modal-close-btn" aria-label="بستن">
+                        <img src="/pamyar_frontend/assets/close-icon.svg" alt="بستن">
+                    </button>
+                <div class="modal-links-container">
+                    <a href="history.html" class="modal-link">
+                        <div class="modal-link-content">
+                            <img src="/pamyar_frontend/assets/history-icon.svg" alt="" class="modal-icon">
+                            <span class="modal-title">تاریخچه صحبت‌ها</span>
+                        </div>
+                        <img src="/pamyar_frontend/assets/back-arrow-rtl.svg" alt="" class="modal-arrow">
+                    </a>
+                    <a href="todolist.html" class="modal-link">
+                        <div class="modal-link-content">
+                            <img src="/pamyar_frontend/assets/todolist-icon.svg" alt="" class="modal-icon">
+                            <span class="modal-title">برنامه‌ریزی</span>
+                        </div>
+                        <img src="/pamyar_frontend/assets/back-arrow-rtl.svg" alt="" class="modal-arrow">
+                    </a>
+                    <a href="/pamyar_frontend/html/calender.html" class="modal-link">
+                        <div class="modal-link-content">
+                            <img src="/pamyar_frontend/assets/calendar-icon.svg" alt="" class="modal-icon">
+                            <span class="modal-title">تقویم</span>
+                        </div>
+                        <img src="/pamyar_frontend/assets/back-arrow-rtl.svg" alt="" class="modal-arrow">
+                    </a>
+                    <a href="chathistory.html" class="modal-link">
+                        <div class="modal-link-content">
+                            <img src="/pamyar_frontend/assets/history-icon.svg" alt="" class="modal-icon">
+                            <span class="modal-title">تاریخچه چت‌ها</span>
+                        </div>
+                        <img src="/pamyar_frontend/assets/back-arrow-rtl.svg" alt="" class="modal-arrow">
+                    </a>
+                    <a href="/pamyar_frontend/html/okr.html" class="modal-link">
+                        <div class="modal-link-content">
+                            <img src="/pamyar_frontend/assets/okr-icon.svg" alt="" class="modal-icon ">
+                            <span class="modal-title ">اهداف و نتایج</span>
+                        </div>
+                        <img src="/pamyar_frontend/assets/back-arrow-rtl.svg " alt=" " class="modal-arrow ">
+                    </a>
+                </div>
+            </header>
+        </div>
+    </div>
+    <script src="/pamyar_frontend/js/plusscript.js "></script>
+    <script src="/pamyar_frontend/js/editphoto.js "></script>
+    <script src="/pamyar_frontend/js/main.js "></script>
+    <script src="/pamyar_frontend/js/darkmode.js "></script>
+</body>
+
+</html>

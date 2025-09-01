@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پمیار - حساب کاربری</title>
+    <link rel="stylesheet" href="/pamyar_frontend/css/style.css">
+</head>
+
+<body class="account-page">
+    <div class="page-container">
+        <header class="account-header">
+            <a href="home.html" class="back-btn" aria-label="بازگشت">
+                <img src="/pamyar_frontend/assets/back-arrow-icon.svg" alt="بازگشت">
+            </a>
+            <h1 class="page-title">حساب کاربری</h1>
+        </header>
+        <main class="account-main">
+            <div class="user-info-card">
+                <a href="edit-profile.html" class="edit-icon-btn" aria-label="ویرایش اطلاعات">
+                    <img src="/pamyar_frontend/assets/edit-icon.svg" alt="ویرایش">
+                </a>
+                <div class="user-details">
+                    <span class="user-name" style="direction: rtl;">ایمیل شما</span>
+                    <span class="user-email">example@gmail.com</span>
+                </div>
+                <!-- اینجا از همان کامپوننت پروفایل صفحه قبل استفاده می‌کنیم -->
+                <div class="profile-button">
+                    <img src="/pamyar_frontend/assets/my-default-avatar.png" alt="آواتار کاربر" class="profile-avatar">
+                    <div class="notification-badge">
+                        <img src="/pamyar_frontend/assets/check-icon.svg" alt="تایید شده">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="account-footer">
+            <button id="logout-btn" class="cta-button logout-button">خروج</button>
+        </footer>
+    </div>
+    <script src="/pamyar_frontend/js/plusscript.js"></script>
+    <script src="/pamyar_frontend/js/logout.js"></script>
+    <script src="/pamyar_frontend/js/editphoto.js"></script>
+    <script src="/pamyar_frontend/js/profileemail.js"></script>
+    <script src="/pamyar_frontend/js/main.js"></script>
+</body>
+
+</html>

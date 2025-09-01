@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پمیار - ورود</title>
+    <link rel="stylesheet" href="/pamyar_frontend/css/style.css">
+</head>
+
+<body class="auth-page">
+    <main class="login-container">
+        <img src="/pamyar_frontend/assets/main-orb.png" alt="لوگوی پمیار" class="main-image">
+        <h1 class="auth-title">ورود به دستیار شخصی شما</h1>
+        <form id="login-form" class="auth-form">
+            <div class="input-wrapper">
+                <input type="email" id="login-email" placeholder="email@domain.com" required>
+            </div>
+            <div class="input-wrapper">
+                <input type="password" id="login-password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="auth-button primary-btn">ورود با ایمیل شخصی شما</button>
+        </form>
+        <div class="divider">
+            <span>ادامه دادن با</span>
+        </div>
+        <button type="button" class="auth-button google-btn">
+                <img src="/pamyar_frontend/assets/google-logo.svg" alt="حساب Google">
+                حساب Google
+            </button>
+        <div class="signup-prompt" style="margin-top: 3px;">
+            <p>
+                حساب کاربری ندارید؟
+                <a href="signup.html">ساخت حساب</a>
+            </p>
+        </div>
+    </main>
+    <script src="/pamyar_frontend/js/login.js"></script>
+    <script src="/pamyar_frontend/js/main.js"></script>
+</body>
+
+</html>

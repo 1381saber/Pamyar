@@ -22,17 +22,12 @@ Pamyar is an intelligent voice assistant designed to enhance productivity for pr
   - Voice Activity Detection: Silero VAD.
   - NLP: LLaMA for query processing and response generation.
 - **Database**: PostgreSQL (production), SQLite (development).
-- **Deployment**: Docker, Nginx (Reverse Proxy), AWS EC2 (planned).
 - **Other**: Celery (task queue), Redis (message broker), PyAudio (audio capture).
 
 ## Installation
 
 ### Prerequisites
 - Python 3.9+
-- Node.js 16+
-- PostgreSQL 13+
-- Docker (optional for containerized deployment)
-- NVIDIA GPU (recommended for LLaMA inference)
 
 ### Setup
 1. **Clone the Repository**:
@@ -75,20 +70,6 @@ Pamyar is an intelligent voice assistant designed to enhance productivity for pr
 4. **Integrations**: Configure Jira/Trello API keys in the settings to sync tasks and projects.
 5. **OKR Tracking**: Define objectives and key results in the `/objectives` page to monitor progress.
 
-## Project Structure
-
-```
-pamyar/
-├── api/                    # Django app for data management
-├── authentication/         # Django app for user authentication
-├── core/                   # Django app for core logic
-├── voice_server/           # Flask server for voice processing
-├── text_server/            # Flask server for text queries
-├── frontend/               # Web interface (HTML, CSS, JS)
-├── docker-compose.yml      # Docker configuration
-└── requirements.txt        # Python dependencies
-```
-
 ## Contributing
 
 Contributions are welcome! Please follow these steps:
@@ -100,7 +81,7 @@ Contributions are welcome! Please follow these steps:
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the UI License.
 
 ## Contact
 
